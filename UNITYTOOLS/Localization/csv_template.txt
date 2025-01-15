@@ -1,0 +1,2 @@
+"key","en","jp","ch","tc","ru","sp","latam","gr","pl","it","tr","fr","br","pr","kr","hu",""
+"menu_play","Play","プレイ","开始游戏","開始遊戲","Играть","Jugar","Jugar","Spielen","Graj","Gioca","Oyna","Jouer","Jogar","Jogar","시작","Játék",""
