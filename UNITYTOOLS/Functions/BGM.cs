@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿
+#if REW_LEGACY
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,3 +36,6 @@ public class BGM : MonoBehaviour
         }
     }
 }
+
+
+#endif

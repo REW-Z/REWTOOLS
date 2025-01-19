@@ -4,13 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ImageLocalization : ScriptableObject
+namespace REWTOOLS
 {
-    public ImageReplace[] imgReplaces;
-
-    public ImageLocalization():base()
+    public class ImageLocalization : ScriptableObject
     {
-        imgReplaces = new ImageReplace[0];
-    }
-}
+        public ImageReplace[] imgReplaces;
 
+        public ImageLocalization() : base()
+        {
+            imgReplaces = new ImageReplace[0];
+        }
+    }
+
+
+}

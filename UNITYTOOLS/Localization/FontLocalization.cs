@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FontLocalization : ScriptableObject
+namespace REWTOOLS
 {
-    public string[] langNames;
-    public Font[] fonts;
-    public TMPro.TMP_FontAsset[] fontAssets;
+    public class FontLocalization : ScriptableObject
+    {
+        public string[] langNames;
+        public Font[] fonts;
+        public TMPro.TMP_FontAsset[] fontAssets;
+    }
 }
+

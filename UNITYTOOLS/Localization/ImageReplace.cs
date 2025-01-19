@@ -4,17 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[Serializable]
-public class ImageReplace
+namespace REWTOOLS
 {
-    public string imgName;
-    
-    public Sprite[] sprites;
-    
-    public ImageReplace() : base()
+    [Serializable]
+    public class ImageReplace
     {
-        imgName = default(string);
-        sprites = new Sprite[System.Enum.GetNames(typeof(LocalizationSystem.Language)).Length];
-        for (int i = 0; i < sprites.Length; i++) { sprites[i] = null; }
+        public string imgName;
+
+        public Sprite[] sprites;
+
+        public ImageReplace() : base()
+        {
+            imgName = default(string);
+            sprites = new Sprite[System.Enum.GetNames(typeof(LocalizationSystem.Language)).Length];
+            for (int i = 0; i < sprites.Length; i++) { sprites[i] = null; }
+        }
     }
 }

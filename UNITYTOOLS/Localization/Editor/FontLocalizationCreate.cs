@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class FontLocalizationCreate : MonoBehaviour
+namespace REWTOOLS
 {
-    [MenuItem("本地化/创建字体本地化信息")]
-    public static void CreateFontLocalizationObj()
+    public class FontLocalizationCreate : MonoBehaviour
     {
-        var fontConfig = ScriptableObject.CreateInstance<FontLocalization>();
+        [MenuItem("本地化/创建字体本地化信息")]
+        public static void CreateFontLocalizationObj()
+        {
+            var fontConfig = ScriptableObject.CreateInstance<FontLocalization>();
 
-        var languageNames = System.Enum.GetNames(typeof(LocalizationSystem.Language));
-        fontConfig.langNames = languageNames;
-        fontConfig.fonts = new Font[languageNames.Length];
-        fontConfig.fontAssets = new TMPro.TMP_FontAsset[languageNames.Length];
+            var languageNames = System.Enum.GetNames(typeof(LocalizationSystem.Language));
+            fontConfig.langNames = languageNames;
+            fontConfig.fonts = new Font[languageNames.Length];
+            fontConfig.fontAssets = new TMPro.TMP_FontAsset[languageNames.Length];
 
-        AssetDatabase.CreateAsset(fontConfig, "Assets/Resources/FontLocalization.asset");
+            AssetDatabase.CreateAsset(fontConfig, "Assets/Resources/FontLocalization.asset");
+        }
     }
+
 }
