@@ -1,2 +1,6 @@
-# 忽略任何子目录中的 .vs
+# 忽略任何子目录中的 .vs/bin/obj
 **/.vs/
+**/obj/
+**/bin/
+REWL/REWL/obj
+REWL/REWL/bin
